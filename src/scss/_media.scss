@@ -1,0 +1,136 @@
+@media (max-width: 1100px) {
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+    .footer-social {
+        display: block;
+    }
+}
+
+@media (max-width:960px) {
+    .header-menu__list {
+        display: none;
+    }
+    .suggestion__inner {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .suggestion-box {
+        margin-top: 80px;
+    }
+    .suggestion-box:last-child {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .f-screen__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .seller-box {
+        display: none;
+    }
+    .suggestion form {
+        flex-wrap: wrap;
+    }
+    .jq-selectbox {
+        width: 100%;
+    }
+    .suggestion input {
+        max-width: 100%;
+    }
+    .suggestion .jq-selectbox__select {
+        margin-top: 10px;
+        border: 1px solid #dcdcdc;
+        width: 100%;
+    }
+    .suggestion button {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 753px) {
+    .suggestion {
+        margin-bottom: 55px;
+    }    
+    .suggestion-box {
+        margin-top: 0px;
+    }
+    .suggestion-box:first-child {
+        margin-top: 60px;
+    }
+}
+@media (max-width: 720px) {
+    .footer-top {
+        padding: 100px 0 80px;
+    }
+    .footer-box:first-child {
+        min-width: 100%;
+        a {
+            display: block;
+        }
+    }
+    .footer-box {        
+        margin-bottom: 30px;
+        &__title {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media (max-width: 556px) {
+    .suggestion form {
+        display: block;
+    }
+}
+
+@media (max-width: 460px) {
+    .footer-box {
+        margin-left: 0;
+    }
+    .footer-box + .footer-box {
+        margin-left: 0;
+    }
+    .footer-box form {
+        margin-left: 0;
+        input {
+            width: 90%;
+        }
+    }
+    .footer-bottom p {
+        margin: 0 10px;
+    }  
+}
+
+@media (max-width: 425px) {
+    .f-screen {
+        padding: 135px 0 150px;
+    }
+    .f-screen__title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .f-screen__text {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    .f-screen .button {        
+        margin-bottom: 10px; 
+    }
+    .f-screen .button+.button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .footer__inner {
+        display: block;
+    }
+    .footer-box__social a+a {
+        margin-left: 2px;
+    }  
+}

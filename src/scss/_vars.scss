@@ -1,0 +1,22 @@
+@mixin f700 {
+    font-family: 'Quicksand-Bold', sans-serif;
+    font-weight: 700;
+}
+
+@mixin f500 {
+    font-family: 'Quicksand-Medium', sans-serif;
+    font-weight: 500;
+}    
+
+@mixin f400 {
+    font-family: 'Quicksand-Regular', sans-serif;
+    font-weight: 400;
+}
+
+
+$l-blue: #0674ec;
+$red: #ff6a6d;
+$green: #77de51;
+$yellow: #feb71d;
+$blue: #58c9e9;
+$purple: #7f4ec2;
