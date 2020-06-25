@@ -944,20 +944,19 @@ form {
     text-align: center;
 }
 .fun-fact-box {
-
     &__img {
         font-size: 48px;
         margin-bottom: 45px; 
-        &.icon-briefcase {
+        .icon-briefcase {
             color: $yellow;
         }
-        &.icon-star-o {
+        .icon-cloud-download {
             color: $blue;
         }
-        &.icon-heart-o {
+        .icon-smile-o {
             color: $green;
         }         
-        &.icon-user {
+        .icon-users {
             color: $red;
         }
     }
@@ -980,9 +979,84 @@ form {
         font-size: 18px;
     }
 }
+
+
 // end fun-fact
+// start why-choose
+
+.why-choose {
+    padding: 110px 0 120px;
+    text-align: center;
+}
+.why-choose__title {
+    font-size: 36px;
+    margin-bottom: 25px;
+    span {
+        color: $l-blue;
+    }
+}
+.why-choose__text {
+    color: #555; 
+    max-width: 680px;  
+    margin: 0 auto;  
+    margin-bottom: 60px;
+}
+.why-choose__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.why-choose-box {    
+    max-width: 362px;   
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08); 
+    padding: 0 0 40px;  
+    margin-bottom: 30px;  
+    &__count {
+        text-align: left;
+        padding-top: 18px;
+        padding-left: 18px;
+        font-size: 48px;
+        line-height: 48px;
+        color: #e5eafe;          
+    }
+    &__img {
+        font-size: 60px;       
+        margin-bottom: 45px;
+        .icon-certificate {
+            color: $l-blue;
+        }
+        .icon-magic-wand {
+            color: $purple;
+        }
+        .icon-lock {
+            color: $green;
+        }
+        .icon-bar-chart {
+            color: $yellow;
+        }
+        .icon-leaf {
+            color: $blue;
+        }
+        .icon-phone {
+            color: $red;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    &__text {
+        color: #555;
+        line-height: 30px;
+        max-width: 300px;
+        margin: 0 auto;
+    } 
+}
 
 
+// end why-choose
 // start footer
 
 .footer-top {
