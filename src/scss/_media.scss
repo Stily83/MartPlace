@@ -150,7 +150,16 @@
     .breadcrumns {
         padding: 38px 0;
     }
+    .login-box__item:first-child {
+        width: 100%;   
+        margin-bottom: 10px; 
+    }
+    .login-box__item:last-child {
+        margin-left: 50px;
+    }
 }
+
+
 
 @media (max-width: 460px) {
     .footer-box {
@@ -215,10 +224,22 @@
         padding: 25px 25px 0;
     }
     .register { 
-        padding: 55px 0 85px;
+        padding: 60px 0 85px;
     }
     .register-box {
         padding-left: 25px;
+    }
+    .register__wrapper {
+        padding: 40px 0;
+    } 
+    .login-box__item:first-child {
+        margin-left: 25px;
+    } 
+    .login-box__item:last-child {
+        margin-left: 25px;
+    } 
+    .login.register label {
+        margin-bottom: 20px;
     }
 }
 

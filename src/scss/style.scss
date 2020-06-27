@@ -1385,6 +1385,63 @@ form {
 
 // end register
 
+.login.register {
+    & label {
+        display: inline-block;
+    }
+    & .login-check  {
+        display: inline-block;
+        width: auto;
+    }
+    & button {
+        display: block;
+    }
+
+    & .jq-checkbox, .jq-radio {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;        
+        background: #fff;
+        border: 1px solid $l-blue;
+    }
+    
+    & .jq-checkbox.checked .jq-checkbox__div {
+        width: 9px;
+        height: 5px;
+        margin: 5px 0 0 5px;
+        border-bottom: 2px solid #fff;
+        border-left: 2px solid #fff;
+    }    
+
+    & .jq-checkbox.login-check.checked.focused {
+        background: $l-blue;
+        border: none;
+    }
+    & .jq-checkbox.login-check.focused {
+        background: #fff;
+        border: 1px solid $l-blue;
+    }
+
+}
+.login-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+        color: #555;
+    }
+    &__item:first-child {
+        margin-left: 50px;
+    }
+    &__item:last-child {
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+    & a {
+        color: $l-blue;
+    }
+}
+
 
 
 // start footer
