@@ -1257,6 +1257,7 @@ form {
             padding: 16px 20px;
             color:#9e9e9e;
             margin-bottom: 30px;
+            outline: none;
         }  
     }
         button {
@@ -1331,11 +1332,12 @@ form {
         line-height: 28px;            
         max-width: 455px; 
         text-align: center;
-        margin: 0 auto;
+        margin: 0 auto 25px;
         padding: 0 10px;
     }
     & form {
         padding: 25px 50px 0px;
+        border-top: 1px solid #e8ebf0;
         label {
             @include f500;
             margin-bottom: 13px;
@@ -1385,9 +1387,14 @@ form {
 
 // end register
 
+
+
+// start login
+
 .login.register {
     & label {
         display: inline-block;
+        margin-bottom: 28px;
     }
     & .login-check  {
         display: inline-block;
@@ -1402,7 +1409,7 @@ form {
         height: 20px;
         border-radius: 50%;        
         background: #fff;
-        border: 1px solid $l-blue;
+        border: 1px solid $l-blue;       
     }
     
     & .jq-checkbox.checked .jq-checkbox__div {
@@ -1410,7 +1417,7 @@ form {
         height: 5px;
         margin: 5px 0 0 5px;
         border-bottom: 2px solid #fff;
-        border-left: 2px solid #fff;
+        border-left: 2px solid #fff;        
     }    
 
     & .jq-checkbox.login-check.checked.focused {
@@ -1441,6 +1448,32 @@ form {
         color: $l-blue;
     }
 }
+
+// end login 
+
+
+
+
+// start recover
+
+.recover.register {
+    & .register__wrapper {
+        max-width: 560px;
+    }
+    & .recover__text {
+        text-align: left;
+        margin: 0 40px 25px;
+        max-width: 478px;
+    }
+    & form button {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+// end recover
 
 
 
