@@ -103,7 +103,8 @@
 .user-box {
     position: relative;
 }
-// header menu
+
+    // header menu
 
 .header-menu {
     height: 80px;
@@ -131,7 +132,7 @@
     }
 }
 
-// header form
+    // header form
 
 form { 
     position: relative;
@@ -161,7 +162,7 @@ form {
     }
 }
 
-//  header sub-menu
+    //  header sub-menu
 
 .sublist, 
 .dropdown {
@@ -236,7 +237,6 @@ form {
     padding-bottom: 30px;
     top: 10px;
 }
-
 .mail-dropdown {   
     width: 360px;       
 }
@@ -249,7 +249,6 @@ form {
     & li {
         width: 270px;
     }
-
 }
 .pages-list {   
     width: 1140px;   
@@ -259,7 +258,6 @@ form {
 .pages__wrapper {
     display: flex;
 }
-
 .mail-box {  
     display: flex;
     justify-content: space-between;
@@ -559,8 +557,10 @@ form {
     color: #555555;
 }
 
-
 // end header
+
+
+
 // start terms
 
 .terms {
@@ -590,9 +590,12 @@ form {
         padding-bottom: 90px;
     }
 }
-// end terms
-// start f-screen
 
+// end terms
+
+
+
+// start f-screen
 
 .f-screen {
     text-align: center ;
@@ -630,8 +633,10 @@ form {
 
 }
 
-
 // end f-screen
+
+
+
 // start suggestion
 
 .suggestion {
@@ -758,6 +763,9 @@ form {
 }
 
 // end suggestion
+
+
+
 // start featured-products
 
 .title {
@@ -1010,8 +1018,10 @@ form {
     }
 }
 
-
 // end fun-fact
+
+
+
 // start why-choose
 
 .why-choose {
@@ -1085,8 +1095,8 @@ form {
     } 
 }
 
-
 // end why-choose
+
 
 
 // start sell-buy
@@ -1138,8 +1148,8 @@ form {
 
 
 
+// start contact
 
-// start contact 
 .contact-top {
     text-align: center;
     padding: 100px 0;
@@ -1261,7 +1271,11 @@ form {
 .form.message-form input {
     border-radius: none;
 }
+
 // end contact
+
+
+
 //start page-404
 
 .page-404 {
@@ -1286,9 +1300,93 @@ form {
     }
 }
 
-
-
 //end page-404
+
+
+
+// start register
+
+.register__wrapper {
+    background-color: #fff;
+    border-radius: 4px; 
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    max-width: 555px;   
+    margin: 0 auto;
+    padding: 55px 0;
+}
+.register__inner {
+    border-bottom: 1px solid #e8ebf0;  
+}
+.register {
+    background-color: #eff1f5;
+    padding: 70px 0 120px;
+    &__title {
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    &__text {
+        color: #555;
+        line-height: 28px;            
+        max-width: 455px; 
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    & form {
+        padding: 25px 50px 0px;
+        label {
+            @include f500;
+            margin-bottom: 13px;
+            display: block;
+        }
+        input {
+            display: block;
+            padding: 0;
+            width: 100%;
+            margin-bottom: 28px;
+            border: 0;     
+            background-color: #f4f5f8;
+            border-radius: 0;
+            padding: 15px 18px;
+            &::placeholder {                     
+                color: #898f96;
+                @include f400;
+                border: 0;  
+            }
+        }
+        button {          
+            border-radius: 25px;
+            background-color: rgb(6, 116, 236);
+            box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+            width: 190px;
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 35px; 
+            position: static;
+            margin-right: auto;
+        }
+    }
+}
+.register-box {
+    display: flex;
+    padding-left: 50px;
+    & .register__link-text {
+        color: #898f96;
+        line-height: 26px;
+        }
+    & .register__link {
+        color: $l-blue;
+        line-height: 26px; 
+        margin-left: 4px;          
+    } 
+}
+
+// end register
+
+
+
 // start footer
 
 .footer-top {
@@ -1319,11 +1417,9 @@ form {
         }
     }
 }
-
 .footer-support {
     margin-right: 30px;
 }
-
 .footer-box:last-child {
     max-width: 370px;   
 }
@@ -1373,7 +1469,6 @@ form {
     display: block;
     margin-bottom: 12px;
 }
-
 .footer-box__social {
     a + a {
         margin-left: 8px;
@@ -1408,7 +1503,6 @@ form {
         background-color: #ea4c89;
     }
 }
-
 .footer-bottom {
     text-align: center;
     background-color: #192027;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/_head.html')
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+
+      @@include('components/_header.html')
+      <!-- WRITE CODE HERE -->
+
+
+      <div class="breadcrumns">
+        <div class="container">
+          <div class="breadcrumns__inner">
+            <ul class="breadcrumns__list">
+              <li><a href="#">Home</a></li>
+              <li><span>Login</span></li>
+            </ul>
+          </div>
+          <div class="breadcrumns__title">
+            Login
+          </div>
+        </div>
+      </div>
+
+      <section class="register">
+        <div class="register__wrapper">
+          <div class="register-inner">
+            <h3 class="register__title">
+              Create Your Account
+            </h3>
+            <p class="register__text">
+              Please fill the following fields with appropriate information
+              to register a new MartPlace account.
+            </p>
+          </div>
+          <form>
+
+            <div class="form__item">
+              <label>Your Name</label>
+              <input class="" type="text" placeholder="Enter your name..." required>
+            </div>
+            <div class="form__item">
+              <label>Email Address</label>
+              <input class="" type="text" placeholder="Enter your email address" required>
+            </div>
+            <div class="form__item">
+              <label>Username</label>
+              <input class="" type="text" placeholder="Enter your username..." required>
+            </div>
+            <div class="form__item">
+              <label>Password</label>
+              <input class="" type="password" placeholder="Enter your password..." required>
+            </div>
+            <div class="form__item">
+              <label>Confirm Password</label>
+              <input class="" type="password" placeholder="Enter your password..." required>
+            </div>
+
+            <button>Register Now</button>
+          </form>
+          <div class="register-box">
+            <p class="register__link-text">Already have an account?</p><a class="register__link" href="#">Login</a>
+          </div>
+          
+
+        </div>
+      </section>
+
+
+      <!-- STOP WRITE CODE -->
+    </div>
+    @@include('components/_footer.html')
+    @@include('components/_scripts.html')
+  </div>
+</body>
+
+</html>

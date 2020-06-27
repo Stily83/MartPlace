@@ -147,6 +147,9 @@
     .terms-box:last-child .terms-box__text {
         padding-bottom: 50px;
     }
+    .breadcrumns {
+        padding: 38px 0;
+    }
 }
 
 @media (max-width: 460px) {
@@ -207,6 +210,25 @@
     }
     .page-404__text {
         font-size: 27px;
+    }
+    .register form {
+        padding: 25px 25px 0;
+    }
+    .register { 
+        padding: 55px 0 85px;
+    }
+    .register-box {
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .register form button {
+        width: 100%;
+    }
+    .register-box {
+        justify-content: center;
+        padding-left: 0;
     }
 }
 
