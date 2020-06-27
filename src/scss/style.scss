@@ -560,7 +560,47 @@ form {
 }
 
 
-// end header 
+// end header
+// start breadcrumns
+
+
+.breadcrumns {
+    background-image: linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
+    padding: 52px 0;
+    ul {
+        margin-bottom: 20px;
+        font-size: 15px;
+        & li {
+            display: inline-block;
+        }
+        & li + li {
+            padding-left: 15px;
+            margin-left: 6px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "/";
+                top: 0;
+                left: 0;
+                color: #fff;
+            }
+        }
+        & a {
+            color: #fff;
+        }
+        & span {
+            color: #bfcad7;
+        }
+    }
+
+}
+.breadcrumns__title {
+    font-size: 30px;
+    color: #fff;
+    @include f500;
+}
+
+// end breadcrumns
 // start f-screen
 
 
@@ -1104,7 +1144,6 @@ form {
     
 }
 
-
 // end sell-buy
 
 
@@ -1233,7 +1272,33 @@ form {
     border-radius: none;
 }
 // end contact
+//start page-404
 
+.page-404 {
+    padding: 80px 0 100px;
+    text-align: center;
+    &__img {
+        width: 393px;        
+        height: 447px;
+    }
+    &__text {
+        font-size: 30px;
+        line-height: 80px;
+    }
+    &__link { 
+        border-radius: 25px;
+        background-color: rgb(6, 116, 236);
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+        width: 190px;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;          
+    }
+}
+
+
+
+//end page-404
 // start footer
 
 .footer-top {
