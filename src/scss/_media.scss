@@ -21,10 +21,13 @@
     }
 }
 
-@media (max-width:960px) {
-    .header-menu__list {
-        display: none;
+@media (max-width: 1172px) {
+    .dropdown li, .sublist li {
+        margin-right: 0;
     }
+}
+
+@media (max-width:960px) {
     .suggestion__inner {
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -34,6 +37,19 @@
     }
     .suggestion-box:last-child {
         margin-top: 0;
+    }
+}
+
+@media (max-width: 915px) {
+    .header-menu__inner {
+        display: block;
+        & form {
+            width: 80%;
+            margin: 0 auto; 
+        }
+        & form input {
+            width: 100%;
+        }
     }
 }
 
@@ -86,6 +102,15 @@
         margin-left: 0;
         width: 100%;
     }
+    .sell-buy {
+        display: block;
+    }
+    .sell-buy-box {
+        width: 100%;
+        // height: 460px;
+        margin: 0 auto;
+        padding: 1px 0;
+    }
 }
 
 
@@ -127,6 +152,15 @@
     }
 }
 
+@media (max-width: 600px) {
+    .header-box {
+        display: none;
+        left: 380px;        
+    }
+    .user-toggle {
+        display: block;
+    }
+}
 
 @media (max-width: 556px) {
     .suggestion form {
@@ -159,7 +193,30 @@
     }
 }
 
-
+@media (max-width: 522px) {
+    .header-menu__inner {
+        display: flex;
+        form {
+            margin: 0;
+        }
+    }
+    .header-menu__list {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .sell-buy-box__img {
+        margin-top: 70px;
+    }   
+    .sell-buy-box__title {
+        margin-bottom: 15px;
+    }
+    .sell-buy-box__text {
+        line-height: 24px;
+        margin: 0 auto 20px;
+    }
+}
 
 @media (max-width: 460px) {
     .footer-box {
@@ -250,6 +307,11 @@
     .register-box {
         justify-content: center;
         padding-left: 0;
+    }
+    .header-menu__inner {
+        form input {
+            padding: 13px 79px 13px 14px;
+        }
     }
 }
 

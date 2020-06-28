@@ -15,4 +15,14 @@ $(function () {
 		rating: 5,
 	});
 
+
+	$('.burger').on('click', function(){
+		$('.burger').toggleClass('active'),
+		$('.header-menu__list').toggleClass('active')
+	});
+
+	$('.user-toggle').on('click', function(){
+		$('.header-box').toggleClass('active')
+	});
+
 });

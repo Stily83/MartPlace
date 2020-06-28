@@ -35,6 +35,14 @@
 }
 .header-box {
     display: flex;
+    position: relative;  
+    z-index: 99;
+    transition: all .3s ease;
+}
+.header-box.active {
+    transition: all .5s;
+    display: flex;
+    left: 0;
 }
 .header-icon {
    color: #7e8fa1;
@@ -327,7 +335,7 @@ form {
         line-height: 24px;
         align-items: initial;
         margin-top: 20px;
-        width: 340px;
+        width: 360px;
     }
     .message:first-child {
         margin-top: 0;
@@ -438,13 +446,18 @@ form {
         top: 55px;
     }
     &.dropdown li+li {
-        margin-left: 0;        
+        margin-left: 0;  
+        width: 100%;      
     }
     &.dropdown li {
         margin-right: 0;
-        width: 400px;        
+        width: 400px;              
     }    
+    &.dropdown li:last-child {
+        margin-bottom: 0 !important;
+    }
     & .product-box {
+        width: 420px;
         padding-top: 0px;
         padding-left: 0px;
         padding-right: 0px;
@@ -453,31 +466,42 @@ form {
             display: flex;            
             padding-left: 20px;    
         }
+        & .cartbox-img__link {
+            margin: 0;
+        } 
         & .cartbox-img {
             display: block;
             object-fit: cover;
             width: 80px;
             height: 70px;
         }
-        &__cover {
+        &__inner {
             margin-left: 12px;
             display: flex;
             justify-content: space-evenly;
+
+        }
+        &__item {       
             & button {
                 border: none;
                 width: 32px;
                 height: 32px;
                 border-radius: 50%;
                 background-color: #f1ecf9;
-                margin-left: 68px;
+                margin-left: 60px;
+                margin-bottom: 10px;
                 cursor: pointer;
             }
         }
-        &__title {
-            font-size: 16px;
-            line-height: 22px; 
-            margin-bottom: 0;  
-            max-width: 180px;           
+        &__title {  
+            max-width: 180px; 
+            margin-left: 20px;    
+            line-height: 22px;           
+            & a {
+                font-size: 16px;                 
+                margin: 0;
+                @include f500; 
+            }       
         }
         &__name {
             justify-content: space-between;
@@ -489,9 +513,10 @@ form {
             span {
                 display: block;                
                 margin-left: 0;
+                line-height: 20px;
             }
             span::before {
-                top: 11px;
+                top: 2px;
             }
         }
         .product-info__cost {        
@@ -502,6 +527,7 @@ form {
             width: 50px;
             height: 30px;
             padding: 0;
+            margin-left: 50px;         
             span {
                 display: block;
                 color: #0674ec;
@@ -509,9 +535,6 @@ form {
             span::before {
                 content: none;
             } 
-        }
-        .product-box__inner {
-            justify-content: flex-end;        
         }
     }
     & .product-box + .product-box {
@@ -526,15 +549,30 @@ form {
     .product-info__purchase {
         font-size: 18px;
         color: #000;
-        margin-left: auto;
-        padding-left: 0;
-        margin-top: 10px;
+        margin-left: auto;     
+        margin: 13px 20px 19px 0;
+        @include f500;
         &::before {
             content: none;
         }
     }
+    .product__bottom {
+        display: flex;
+    }
+    .product-bottom__item {
+        font-size: 15px;     
+        width: 50%;
+        text-align: center;
+        padding: 10px 0;        
+        background-color: $l-blue;      
+        color: #fff;
+        display: block;
+        margin: 0;    
+    }
+    .product-bottom__item--color {
+       background-color: $purple;    
+    }
 }
-
 .name-box {
     display: flex;
     justify-content: space-between;  
@@ -556,7 +594,14 @@ form {
 .message__text {
     color: #555555;
 }
-
+.user-toggle {
+    margin-top: 10px;
+    display: none;
+    i {
+        font-size: 50px;
+        color: $l-blue;
+    }
+}
 // end header
 
 
@@ -1129,6 +1174,7 @@ form {
         max-width: 582px;
         margin: 0 auto;
         margin-bottom: 40px;
+        padding: 0 15px;
     }
     & .button {       
         width: 190px;
@@ -1471,9 +1517,91 @@ form {
 
 }
 
-
-
 // end recover
+
+
+
+//start how-works
+
+.how-works {
+    background-image: linear-gradient(-90.0deg, #0d3ef2 0%, #4c1f9c 100%);    
+}
+.how-works-top {
+    padding-top: 90px;
+    padding-bottom: 30px;  
+    &__title {
+        text-align: center;
+        color: #f3f3f8;
+        max-width: 396px;
+        font-size: 30px;
+        margin: 0 auto;
+        line-height: 50px;
+        @include f500;
+        margin-bottom: 75px;
+        span {
+            @include f400;            
+        }
+    }
+    & .breadcrumns {
+        padding: 0;
+        background: none;
+        text-align: center;
+        width: auto;
+        margin: 0 auto;     
+        &__inner {            
+            width: auto;
+        }
+        &__list {
+            margin: 0;
+        }
+    }    
+}
+.how-work-content {
+    background-color: #fff;
+}
+.how-work__inner {
+    padding: 98px 0 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.how-work-block--bg {
+    background-color: #eff1f5;
+}
+.how-work__inner--color {    
+    & .how-work-box {
+        order: -1;
+    }
+}
+.how-work-box {
+    max-width: 450px;
+    &__title {
+        font-size: 30px;
+        line-height: 46px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    &__text {
+        line-height: 30px;
+        color: #555555;
+        margin-bottom: 20px;
+    }
+}
+.how-work-bottom {
+    padding: 110px 0;
+    background-image: linear-gradient(-90.0deg, #0d3ef2 0%, #7221a0 100%);
+    color: #e7e7e7;
+    text-align: center;
+    &__title {   
+        font-size: 36px;     
+        margin-bottom: 23px;      
+    }    
+    &__text {  
+        font-size: 18px;
+        margin-bottom: 34px;
+    }
+}
+
+//end how-works
 
 
 

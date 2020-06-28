@@ -4,24 +4,15 @@
       <div class="header-top__inner">
         <div class="header-logo">
           <a href="#">
-
             <img src="images/logo.png" alt="logo">
             Mart<span>Place</span>
-
           </a>
         </div>
-
-        <!-- seller start  -->
-        <!-- <div class="header-wrapper"></div> -->
         <div class="seller-box">
           <a class="seller" href="#">Become a Seller</a>
         </div>
-
-        <!-- seller end -->
         <div class="header-box">
-
           <div class="header-notification">
-
             <div class="notification-box bell-box-drop">
               <div class="notification-item notification">
                 <a class="header-icon icon-bell-o" href="#"></a>
@@ -175,9 +166,6 @@
               </div>
             </div>
             <div class="notification-box">
-
-<!-- не доделан выпадающий список  -->
-
               <div class="notification-item purchase">
                 <a class="header-icon icon-shopping-cart" href="#"></a>
                 <span>2</span>
@@ -188,50 +176,63 @@
                   <li>
                     <div class="product-box">
                       <div class="product-box__wrap">
-                        <img class="cartbox-img" src="images/cartbox-img.jpg" alt="">
-                        <div class="product-box__cover">
-                          <div>
-                            <h4 class="product-box__title">
+                        <a class="cartbox-img__link"  href="#">
+                          <img class="cartbox-img" src="images/cartbox-img.jpg" alt="">
+                        </a>
+                        <div class="prduct-box__item">
+                          <h4 class="product-box__title">
+                            <a href="#">
                               Finance and Consulting
                               Business Theme
-                            </h4>
-                            <button type="button" class="delete">
-                              <i class="icon-trash-o"></i>
-                            </button>
-                          </div>
+                            </a>
+                          </h4>
                           <div class="product-box__name">
                             <a href="#"><span>WordPress</span></a>
-                            <div class="product-info__cost">$60</div>
                           </div>
                         </div>
-                      </div>
-
-<!--  конец списка -->
-
-                    </div>
-                    <div class="product-box">
-                      <div class="product-box__wrap">
-                        <img class="cartbox-img" src="images/cartbox-img.jpg" alt="">
-                        <div class="product-box__cover">
-                          <h4 class="product-box__title">
-                            Finance and Consulting
-                            Business Theme
-                          </h4>
+                        <div class="product-box__item">
                           <button type="button" class="delete">
                             <i class="icon-trash-o"></i>
                           </button>
+                          <div class="product-info__cost">$60</div>
                         </div>
                       </div>
-                      <div class="product-box__name">
-                        <a href="#"><span>WordPress</span></a>
-                        <div class="product-info__cost">$60</div>
+                    </div>
+                    <div class="product-box">
+                      <div class="product-box__wrap">
+                        <a class="cartbox-img__link" href="#">
+                          <img class="cartbox-img" src="images/cartbox-img.jpg" alt="">
+                        </a>
+                        <div class="prduct-box__item">
+                          <h4 class="product-box__title">
+                            <a href="#">
+                              Flounce - Multipurpose
+                              OpenCart Theme
+                            </a>
+                          </h4>
+                          <div class="product-box__name">
+                            <a href="#"><span>WordPress</span></a>
+                          </div>
+                        </div>
+                        <div class="product-box__item">
+                          <button type="button" class="delete">
+                            <i class="icon-trash-o"></i>
+                          </button>
+                          <div class="product-info__cost">$20</div>
+                        </div>
                       </div>
-
                     </div>
                     <div class="product-info">
                       <div class="product-info__purchase">Total : $80</div>
                     </div>
-
+                    <div class="product__bottom">
+                      <a class="product-bottom__item product-bottom__item--color" href="#">
+                        Go to Cart
+                      </a>
+                      <a class="product-bottom__item" href="#">
+                        Go to Checkout
+                      </a>
+                    </div>
                   </li>
                   <li></li>
                 </ul>
@@ -269,12 +270,18 @@
             </ul>
           </div>
         </div>
+        <div class="user-toggle">
+          <i class="icon-user"></i>
+        </div>
       </div>
     </div>
   </div>
   <nav class="header-menu">
     <div class="container">
-      <div class="header-menu__inner">
+      <div class="header-menu__inner">      
+        <div class="burger">
+          <span></span>
+        </div> 
         <ul class="header-menu__list">
           <li class="header-menu__item">
             <a href="#">
@@ -325,7 +332,6 @@
               Pages
             </a>
             <div class="pages-list sublist">
-
               <div class="martplace">
                 <h3 class="pages__title">MartPlace Pages</h3>
                 <div class="pages__wrapper">
@@ -342,7 +348,6 @@
                     <li><a href="#">Single Product V-2</a></li>
                     <li><a href="#">Single Product V-3</a></li>
                   </ul>
-
                   <ul>
                     <li><a href="#">Single Items Comments</a></li>
                     <li><a href="#">Single Items Reviews</a></li>
@@ -359,7 +364,6 @@
                 </div>
               </div>
               <div class="dashboard">
-
                 <h3 class="pages__title">Dashboard</h3>
                 <ul>
                   <li><a href="#">Dashboard</a></li>
@@ -376,7 +380,6 @@
                 </ul>
               </div>
               <div class="other">
-
                 <h3 class="pages__title">Others Pages</h3>
                 <div class="pages__wrapper">
                   <ul>
@@ -392,7 +395,6 @@
                     <li><a href="#">Forum Details</a></li>
                     <li><a href="#">How It Works</a></li>
                   </ul>
-
                   <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Pricing Plan</a></li>
