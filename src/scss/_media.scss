@@ -21,9 +21,13 @@
     }
 }
 
+
 @media (max-width: 1172px) {
     .dropdown li, .sublist li {
         margin-right: 0;
+    }
+    .plan__inner {
+        justify-content: space-evenly;
     }
 }
 
@@ -52,6 +56,19 @@
         }
     }
 }
+
+@media (max-width:800px) {
+    .plan__inner {
+        display: block;
+        
+    }
+    .plan-box {
+        margin: 20px auto 0;
+    }
+    .plan-box + .plan-box {   
+        margin: 20px auto 0;
+    }
+} 
 
 @media (max-width: 809px) {
     .contact-message .message-form__inner textarea {
@@ -298,6 +315,17 @@
     .register__text {
         line-height: 25px;
     }
+    .plan__text {
+        line-height: 25px;
+        margin: 0px auto 35px;
+    }
+    .plan {
+        padding: 89px 0 70px;
+    }
+    .plan__title {
+        font-size: 33px;
+        margin-bottom: 20px;
+    }    
 }
 
 @media (max-width: 375px) {
