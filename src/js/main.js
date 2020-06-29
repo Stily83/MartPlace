@@ -5,6 +5,13 @@ $(function () {
 		nextArrow: $('.next'),
 	});
 	
+	$('.slider-follower').slick({
+		prevArrow: $('.prev-btn'),
+		nextArrow: $('.next-btn'),
+		slidesToShow: 3,
+		slidesToScroll: 3,
+	});
+	
 
 	$('select, option, input').styler();
 	

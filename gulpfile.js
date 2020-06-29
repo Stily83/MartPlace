@@ -285,6 +285,7 @@ gulp.task("webp", function () {
 		.pipe(size())
 });
 
+
 gulp.task("deletefonts", function () {
 	//задачи для очистки директории со шрифтами в build. Нужна для того, чтобы удалить лишнее.
 	return del.sync("build/fonts/**/*.*");

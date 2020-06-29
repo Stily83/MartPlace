@@ -992,19 +992,23 @@ form {
     }
 }
 .prev,
-.next {
+.next,
+.prev-btn,
+.next-btn {
     width: 55px;
     height: 45px;
     border: none;
     background-color: #7347c1;
     cursor: pointer;
 }
-.prev {
+.prev,
+.prev-btn {
 
     border-radius: 27.5px 0 0 27.5px;
     
 }
-.next {
+.next,
+.next-btn {
  
     border-radius: 0 27.5px 27.5px 0;
   
@@ -1017,16 +1021,19 @@ form {
 // start fun-fact
 
 .fun-fact {
-    padding: 90px 0;
+    padding: 90px 0 60px;
     background-color: #212225;
-
 }
 .fun-fact__wrapper {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
 }
 .fun-fact-box {
+    max-width: 170px;
+    width: 100%;
+    margin-bottom: 30px;
     &__img {
         font-size: 48px;
         margin-bottom: 45px; 
@@ -1065,6 +1072,39 @@ form {
 
 // end fun-fact
 
+
+
+// start support
+
+.support__inner {
+    display: flex;
+    justify-content: center;
+}
+.support-box {
+    padding: 60px 0;
+    text-align: center;
+    &__img {
+        margin-bottom: 31px;
+    }
+    &__subtitle {
+        font-size: 24px;
+        span {
+            color: $l-blue;
+        }
+    }
+    &__subtitle--color span {
+        color: #7347c1;
+    }
+}
+.support-box:first-child {
+    padding-right: 130px;
+    border-right: 1px solid #e8eaf3;
+}
+.support-box:last-child {
+    padding-left: 130px;
+}
+
+// end support 
 
 
 // start why-choose
@@ -1600,9 +1640,78 @@ form {
         margin-bottom: 34px;
     }
 }
+.join {    
+    & .how-work-box {
+        margin: 0 auto;
+    }
+    & .how-work-box__title {
+        margin-bottom: 23px;
+    }
+    & .how-work-box__text {
+        margin-bottom: 34px;
+        color: #fff;
+    }
+}
 
 //end how-works
 
+// start follower
+
+.follower.featured-products {
+    & .slider__item {
+        display: block !important;
+    }
+    & .product-box__title {
+        font-size: 20px;
+        padding: 30px 42px 0px 33px;
+    }
+    & .product-box__name {
+        padding: 0px 42px 0px 33px;
+        span::before {
+            display: none;
+        }
+        i {
+            margin-right: 9px;
+            margin-top: 2px;
+            font-family: 'icomoon';
+            font-size: 17px;
+        }
+    }
+    & .product-box__text {
+        padding: 0px 33px 0px 33px;
+    }
+    & .product-box__inner {
+        padding: 15px 42px 15px 33px;
+    }    
+    & .product-box { 
+        width: 361px;
+        padding: 0;     
+    }
+    & .slider__img {
+        max-width: 361px;
+        height: 230px;
+    }
+    & .rate-star {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+    & .product-info__purchase {
+        margin-left: 31px;
+    }
+    & .img-box-aside {
+        width: 361px;
+        height: 230px; 
+    }
+    & .img-box:hover .img-box-aside {
+        width: 361px;
+        height: 230px; 
+    }
+    & .slick-arrow.slick-hidden {
+        display: block;
+    }
+}
+
+// end follower
 
 
 // start plan
@@ -1719,8 +1828,6 @@ form {
     border-top: 3px solid #0674ed;
     border-radius: 3.0px 3.0px 0.0px 0.0px;
 }
-
-
 .plan-box--border-yellow {
     border-top: 3px solid #feb71d;
     border-radius: 3.0px 3.0px 0.0px 0.0px;
@@ -1748,8 +1855,74 @@ form {
     height: 19px;
     background-image: url(../images/question-circle.png);
 }
+
 // end plan
 
+
+
+// start feedback
+
+.feedback {
+    padding: 174px 0 185px;
+    &__title {
+        font-size: 36px;
+        margin-bottom: 36px;
+        text-align: center;
+        span {
+            color: $l-blue;
+        }
+    }
+    &__text {
+        text-align: center;
+        color: #555;
+        line-height: 30px;
+        max-width: 672px;
+        margin: 0 auto 48px;
+    }
+}
+.feedback__wrapper {
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom: 60px;
+}
+.feedback-box {
+    max-width: 550px;
+    width: 100%;
+    box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.07);   
+    border-left: 2px solid $l-blue;  
+    padding: 48px 36px;
+    img {
+        display: block;
+    }     
+}
+.feedback-box__inner {
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-box__user {
+    padding-top: 12px;
+    margin-left: 19px;
+    margin-right: auto;
+    &-name {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    &-profession {
+        color: #555;
+    }
+}
+.feedback-box__text {
+    line-height: 30px;
+    color: #555;
+}
+.feedback-btn {
+    background-color: $l-blue;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+// end feedback
 
 
 // start footer
