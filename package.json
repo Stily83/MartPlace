@@ -48,6 +48,7 @@
     "imagemin-pngquant": "^8.0.0",
     "jquery": "^3.5.1",
     "jquery-form-styler": "^2.0.2",
+    "mixitup": "^3.3.1",
     "rateyo": "^3.0.0-alpha.2",
     "replace": "^1.2.0",
     "sass": "^1.26.7",
@@ -57,5 +58,5 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }    
+  }
 }

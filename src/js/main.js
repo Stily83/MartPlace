@@ -32,4 +32,5 @@ $(function () {
 		$('.header-box').toggleClass('active')
 	});
 
+	var mixer = mixitup('.sort-content');
 });
